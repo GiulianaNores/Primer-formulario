@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>formulario</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div class="formulario">
+        <form action="resultado.html" method="post">
+          <h1 class="titulodelformulario">Registro de usuario</h1>
+          <section class="inputsbasicos">
+            <fieldset>
+              <legend>Datos principales</legend>
+              <label for="nombre">Nombre:</label>
+              <input type="text" name="nombre" id="nombre" />
+              <label for="email">Email:</label>
+              <input type="text" name="email" id="email" />
+              <label for="password">Contraseña:</label>
+              <input type="text" name="password" id="password" />
+            </fieldset>
+          </section>
+          <section class="perfil">
+            <fieldset>
+              <legend>Tu perfil</legend>
+              <label for="job">Función</label>
+              <select name="job" id="job">
+                <optgroup label="job">
+                  <option value="job">Desarrollador front-end</option>
+                  <option value="job">Desarrollador back-end</option>
+                  <option value="job">Desarrollador full-stack</option>
+                  <option value="job">Diseñador web</option>
+                </optgroup>
+              </select>
+              <label for="avatar">Foto de perfil:</label>
+              <input
+                type="file"
+                name="avatar"
+                accept="image/*"
+                id="avatar"
+                multiple
+              />
+              <label for="">Fecha de nacimiento:</label>
+              <input type="date" name="nacimiento" id="nacimiento" />
+              <label for="biografía">Biografía:</label>
+              <textarea name="biografía" id="biografía"></textarea>
+              <label for="intereses">¿cuáles son tus intereses?</label>
+              <label for="desarrollo">
+                <input
+                  type="checkbox"
+                  name="intereses"
+                  id="desarrollo"
+                  value="desarrollo"
+                  checked
+                />Desarrollo</label
+              >
+              <label for="diseño">
+                <input
+                  type="checkbox"
+                  name="intereses"
+                  id="diseño"
+                  value="diseño"
+                />Diseño</label
+              >
+              <label for="negocios">
+                <input
+                  type="checkbox"
+                  name="intereses"
+                  id="negocios"
+                  value="negocios"
+                />Negocios</label
+              >
+            </fieldset>
+          </section>
+          <section class="radiusoption">
+            <fieldset>
+              <legend>Newsletter</legend>
+            <label for="">Recibir noticias por correo</label>
+            <label for="si">
+              <input type="radio" name="newsletter" id="si" value="si" />Si, me
+              gustaría recibir noticias</label
+            >
+            <label for="no">
+              <input type="radio" name="newsletter" id="no" value="no" />No
+              enviarme noticias</label
+            >
+          </fieldset>
+          </section>
+          <a href="#"><button type="reset">Resetear</button></a>
+          <a href="#"><button type="submit">Enviar</button></a>
+        </form>
+      </div>
+    </main>
+    <footer></footer>
+  </body>
+</html>
